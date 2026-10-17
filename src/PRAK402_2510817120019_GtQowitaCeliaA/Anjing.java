@@ -1,6 +1,6 @@
 package PRAK402_2510817120019_GtQowitaCeliaA;
 
-public class Anjing extends HewanPeliharaan{
+public class Anjing extends HewanPeliharaan {
     private String warnaBulu;
     private String[] kemampuan;
 
@@ -13,8 +13,10 @@ public class Anjing extends HewanPeliharaan{
     public void displayDetailAnjing() {
         super.display();
         System.out.println("Memiliki warna bulu : " + warnaBulu);
-        System.out.println("Memiliki kemampuan : ");
+        System.out.print("Memiliki kemampuan : ");
+
         for (int i = 0; i < kemampuan.length; i++) {
+            System.out.print(kemampuan[i]);
             if (i < kemampuan.length - 1) {
                 System.out.print(" ");
             }
@@ -22,4 +24,3 @@ public class Anjing extends HewanPeliharaan{
         System.out.println();
     }
 }
-
